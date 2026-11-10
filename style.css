@@ -1,0 +1,508 @@
+/* =====================================
+   1. GENERAL STYLING
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6fa;
+    color: #333333;
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   2. NAVIGATION BAR
+===================================== */
+
+header {
+    background-color: #172554;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c4b5fd;
+}
+
+
+/* =====================================
+   3. HOME / HERO SECTION
+===================================== */
+
+.hero {
+    min-height: 520px;
+
+    background: linear-gradient(
+        135deg,
+        #172554,
+        #3730a3
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 10%;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+
+/* Profile Photograph */
+
+.profile-image {
+    margin-bottom: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 5px solid white;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Welcome Text */
+
+.welcome {
+    color: #c4b5fd;
+
+    letter-spacing: 3px;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Main Heading */
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #c4b5fd;
+}
+
+.hero h2 {
+    font-size: 22px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* Explore Button */
+
+.btn {
+    display: inline-block;
+
+    background-color: #c4b5fd;
+
+    color: #172554;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* =====================================
+   4. COMMON SECTION STYLING
+===================================== */
+
+.section {
+    padding: 65px 10%;
+}
+
+.section-title {
+    text-align: center;
+
+    color: #172554;
+
+    font-size: 30px;
+
+    margin-bottom: 35px;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 65px;
+    height: 4px;
+
+    background-color: #8b5cf6;
+
+    margin: 10px auto;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================
+   5. ABOUT ME SECTION
+===================================== */
+
+.about-box {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.about-box p {
+    margin-bottom: 15px;
+
+    text-align: justify;
+}
+
+
+/* =====================================
+   6. EDUCATION TABLE
+===================================== */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: white;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+th {
+    background-color: #172554;
+
+    color: white;
+
+    padding: 16px;
+
+    text-align: left;
+}
+
+td {
+    padding: 15px;
+
+    border-bottom: 1px solid #dddddd;
+}
+
+tr:hover {
+    background-color: #ede9fe;
+}
+
+
+/* =====================================
+   7. EXPERIENCE AND PROJECT CARDS
+===================================== */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 22px;
+
+    border-radius: 12px;
+
+    border-left: 5px solid #8b5cf6;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+    color: #172554;
+
+    font-size: 20px;
+
+    margin-bottom: 5px;
+}
+
+.date {
+    color: #7c3aed;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+.card ul {
+    padding-left: 22px;
+}
+
+.card li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   8. SKILLS SECTION
+===================================== */
+
+.skills-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.skill-box {
+    background-color: white;
+
+    padding: 25px;
+
+    flex: 1;
+
+    min-width: 220px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+
+    border-top: 4px solid #8b5cf6;
+}
+
+.skill-box h3 {
+    color: #172554;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.skill-box p {
+    background-color: #ede9fe;
+
+    padding: 7px 12px;
+
+    margin-bottom: 9px;
+
+    border-radius: 5px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   9. CONTACT SECTION
+===================================== */
+
+.contact-section {
+    background-color: #e0e7ff;
+
+    text-align: center;
+}
+
+.contact-details {
+    background-color: white;
+
+    max-width: 550px;
+
+    margin: 25px auto 0;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.contact-details p {
+    margin: 12px 0;
+}
+
+.contact-details a {
+    color: #4338ca;
+
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================
+   10. FOOTER
+===================================== */
+
+footer {
+    background-color: #172554;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 22px;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   11. RESPONSIVE DESIGN
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .about-box {
+        padding: 20px;
+    }
+
+    .profile-image img {
+        width: 135px;
+        height: 135px;
+    }
+
+}
